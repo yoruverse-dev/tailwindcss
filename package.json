@@ -1,9 +1,9 @@
 {
   "name": "@yoruverse-js/tailwindcss",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
-  "module": "/lib/index.ts",
-  "main": "/lib/index.ts",
+  "module": "index.ts",
+  "main": "index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yoruverse-dev/tailwindcss.git"

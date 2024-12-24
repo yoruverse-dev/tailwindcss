@@ -6,7 +6,7 @@ import { Palette } from '@yoruverse-js/palette'
 export class Plugin {
 
     public palette: Palette
-    public version = '0.0.2'
+    public version = '0.0.3'
     public prefix?: string
     public textColor: Colors
     public borderColor: Colors
