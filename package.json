@@ -1,6 +1,5 @@
 {
-  "name": "tailwindcss",
-  "private": true,
+  "name": "@yoruverse-js/tailwindcss",
   "version": "0.0.1",
   "type": "module",
   "module": "/lib/index.ts",
