@@ -1,4 +1,6 @@
-import { plugin } from './lib'
+import { Plugin } from './lib'
+
+const plugin = new Plugin().custom()
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -9,6 +11,6 @@ export default {
     theme: {
         extend: {},
     },
-    plugins: [plugin()],
+    plugins: [plugin],
 }
 

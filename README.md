@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# Yoruverse official TailwindCSS plugin
+Hey there! This is the official Yoruverse TailwindCSS plugin. You can copy, modify and use it for your own projects, don't need to credit us, but we would appreciate it if you do.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installation
+You can download the plugin from the npm registry by running the following command:
+```bash
+npm install @yoruverse-js/tailwindcss
+```
 
-Currently, two official plugins are available:
+## Usage
+You can import the plugin in your project by using the following code:
+```typescript
+// tailwind.config.js
+import { Plugin } from '@yoruverse-js/Plugin'
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+const plugin = new Plugin().default()
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        './index.html',
+        './src/**/*.{js,ts,jsx,tsx}',
+    ],
+    theme: {
+        extend: {},
     },
-  },
-})
+    plugins: [plugin],
+}
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contributors
+<a href="https://github.com/jotis1" target="_blank">
+    <img src="https://github.com/jotis1.png" width="30" height="30" alt="Jotis1" style="border-radius: 15px"  />
+</a>
+<a href="https://github.com/8l4ckr0s3" target="_blank">
+    <img src="https://github.com/8l4ckr0s3.png" width="30" height="30" alt="Jotis1" style="border-radius: 15px"  />
+</a>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details.
