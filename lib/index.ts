@@ -58,7 +58,7 @@ export class Plugin {
         border.createVariable('border-disabled', colors['gray-light'][300], colors['gray-dark'][700])
         border.createVariable('border-disabled_subtle', colors['gray-light'][200], colors['gray-dark'][800])
         border.createVariable('border-brand', colors['brand'][500], colors['brand'][400])
-        border.createVariable('border-brand_alt', colors['brand'][600], colors['brand'][700])
+        border.createVariable('border-brand_alt', colors['brand'][600], colors['gray-dark'][700])
         border.createVariable('border-error', colors['error'][500], colors['error'][400])
         border.createVariable('border-error_subtle', colors['error'][300], colors['error'][400])
 
