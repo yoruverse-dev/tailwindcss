@@ -63,7 +63,7 @@ export class Plugin {
 
     }
 
-    #loadDefaultforegroundColors() {
+    #loadDefaultForegroundColors() {
         const foreground = this.foregroundColor
         const colors = this.palette.colors()
         foreground.createVariable('fg-primary', colors['gray-light'][900], colors['base']['white'])
@@ -129,7 +129,7 @@ export class Plugin {
     default() {
         this.#loadDefaultTextColors()
         this.#loadDefaultBorderColors()
-        this.#loadDefaultforegroundColors()
+        this.#loadDefaultForegroundColors()
         this.#loadDefaultBackgroundColors()
         return tw(({ addBase, addUtilities }) => {
             addBase({

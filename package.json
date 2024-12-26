@@ -1,6 +1,6 @@
 {
   "name": "@yoruverse-js/tailwindcss",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "type": "module",
   "module": "index.ts",
   "main": "index.ts",

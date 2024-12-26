@@ -43,7 +43,7 @@ export const spacing = new SpacingProperty([
     new SpacingVariable('80', 320),
     new SpacingVariable('96', 384),
     new SpacingVariable('120', 480),
-    new SpacingVariable('140', 480),
+    new SpacingVariable('140', 560),
     new SpacingVariable('160', 640),
     new SpacingVariable('180', 720),
     new SpacingVariable('192', 768),
